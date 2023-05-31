@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="claroescuro.css">
+    <link rel="stylesheet" href="menufooter.css">
+    <script src="https://kit.fontawesome.com/61e20fc52d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio - Guilherme Brasil Melo </title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="menu-hamburger">
+                <i class="fa-solid fa-bars fa-bounce"></i>
+            </div>
+
+            <img src="logo.png" alt="logo">
+            <div class="menu">
+                <figure>
+                    <i class="fa-solid fa-house"></i>
+                    <figcaption><a href="#">Home</a></figcaption>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-id-card-clip"></i>
+                    <figcaption><a href="#sobre" class="Sobre">Sobre</a></figcaption>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <figcaption><a href="#proj">Projetos</a></figcaption>
+                </figure>
+            </div>
+
+            <div class="checkbox-wrapper-5">
+                <div class="check">
+                    <input type="checkbox" id="check-5">
+                    <label for="check-5"></label>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main id="Home">
+        <section class="sect-1">
+            <h1>Olá! Me chamo <span> Guilherme Melo </span></h1>
+            <p>Venha me conhecer um pouco e aproveite para se conectar comigo e criar um Networking.</p>
+        </section>
+        <div class="sociais">
+            <a href="https://www.linkedin.com/in/guilhermebmelo/"> <i class="fa-brands fa-linkedin-in fa-bounce" style="color: #154aac;"></i> </a>
+            <a href="#"> <i class="fa-brands fa-whatsapp fa-bounce" style="color: #25d365e3;"></i> </a>
+            <a href="https://github.com/guilherme-brasill"> <i class="fa-brands fa-github fa-bounce" style="color:#cecece;"></i> </a>
+        </div>
+        <img src="img/foto.png" alt="imagem-landing">
+    </main>
+    
+    <section id="sobre">
+        <div class="sobre-1">
+            <h1>MINHA JORNADA</h1>
+            <p>Sou um Desenvolvedor Web (Full Stack), construindo a parte de linguagens, códigos e tecnologias de Sites
+                e Aplicações Web que leva ao sucesso do produto como um todo. Confira alguns dos meus trabalhos na seção
+                Projetos.</p>
+            <p>Também gosto de compartilhar conteúdo relacionado ao que aprendi ao longo do meu curso em Desenvolvimento
+                Web para que possa ajudar outras pessoas da Comunidade Dev. Sinta-se à vontade para se conectar ou me
+                seguir no meu <a href="#">LinkedIn</a>, onde posto conteúdo útil relacionado ao desenvolvimento e
+                programação da Web.</p>
+            <p>Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se você tiver uma boa
+                oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em contato
+                comigo.</p>
+        </div>
+
+        <div class="sobre-2" id="sobre-2">
+            <h1>HABILIDADES</h1>
+            <div class="imgs-logo">
+                <img src="img/html-5.png" alt="Logo HTML" class="logo-normal">
+                <img src="img/css-3.png" alt="Logo CSS" class="logo-normal">
+                <img src="img/js.png" alt="Logo JS" class="logo-normal" id="java">
+                <img src="img/php.png" alt="Logo PHP" class="logo-esticada">
+                <img src="img/mysql.png" alt="Logo MySQL" class="logo-esticada">
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h1 id="proj">Projetos destaques</h1>
+        <div class="galeria">
+            <div style="background-image: url(https://imgcloud.com.br/share/75JqFwcRxA7WgvgE);"> </div>
+            <div style="background-image: url(https://imgcloud.com.br/share/EX3kWzARsxdlUO3Q);"> </div>
+            <div style="background-image: url(https://imgcloud.com.br/share/nQo2Lwu28hcEo0I2);"> </div>
+            <div style="background-image: url(https://imgcloud.com.br/share/HuTtpQnIrfQZYEIz);"> </div>
+            <div style="background-image: url();"> <a href="#" class="maistrabalho">Veja mais</a> </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <p>&#169 2023 Guilherme Brasil Melo</p>
+        <div class="footer">
+            <a href="#header">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#proj">Projetos</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script>
+        const menuHamburger = document.querySelector('.menu-hamburger');
+        const menu = document.querySelector('.menu');
+        menuHamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        }) 
+    </script>
+
+</body>
+
+</html>

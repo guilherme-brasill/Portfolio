@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+}
+
+main {
+    background-color: #101316;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    border-bottom: 2px solid white;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section h1 {
+    font-size: 45px;
+    margin-bottom: 2rem;
+    line-height: 3.5rem;
+    letter-spacing: 5px;
+    width: 30rem;
+}
+
+main section span {
+    color: rgb(112, 147, 102);
+}
+
+main section p {
+    font-size: 24px;
+    line-height: 2.7rem;
+    width: 32rem;
+    text-align: justify;
+}
+
+.sociais {
+    margin-top: 2.5rem;
+    font-size: 35px;
+    position: absolute;
+    left: 56rem;
+    top: 30.8rem;
+    border-top: 3px solid rgba(212, 249, 242, 0.06);
+    padding-top: 30px;
+    width: 18rem;
+    text-align: center;
+}
+
+.sociais a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    margin-left: 0.8rem;
+}
+
+.fa-brands:hover {
+    font-size: 30px;
+    transition: 0.5s;
+    background-color: #f1f1f155;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+main img {
+    width: 28%;
+    height: 80%;
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: 1s;
+}
+
+main img:hover {
+    width: 27%;
+    height: 75%;
+}
+
+#sobre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #191919;
+    color: #ffffffb6;
+    height: 130vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-1 {
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 4rem;
+}
+
+.sobre-1 h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 2.2rem;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+
+.sobre-1 p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.sobre-1 a {
+    color: #f1f1f1d5;
+}
+
+.sobre-1 a:hover {
+    font-size: 20.5px;
+    transition: 1s;
+}
+
+.sobre-2 {
+    width: 45%;
+    height: 36.4rem;
+    padding: 0 1rem;
+    background-color: #f1f1f11b;
+    border-radius: 10px;
+}
+
+.sobre-2 h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 3px 5px rgba(255, 255, 255, 0.096);
+
+    padding: 1rem 0;
+    color: #222;
+}
+
+.imgs-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.logo-normal {
+    width: 8rem;
+    height: 10rem;
+    padding: 10px;
+    border: rgba(255, 255, 255, 0.08);
+
+    margin-bottom: 1rem;
+    filter: opacity(70%);
+}
+
+.logo-normal:hover {
+    filter: none;
+    width: 9rem;
+    height: 11rem;
+    transition: 0.5s;
+    border: 3px solid rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+}
+
+#java {
+    width: 9.5rem;
+}
+
+#java:hover {
+    width: 10.5rem;
+
+}
+
+.logo-esticada {
+    width: 10rem;
+    height: 8rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+    filter: opacity(70%);
+    border: rgba(255, 255, 255, 0.08);
+}
+
+.logo-esticada:hover {
+    filter: none;
+    width: 11rem;
+    height: 9rem;
+    transition: 0.5s;
+    border: 3px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+#projetos {
+    background-color: #171515;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 0 5rem;
+}
+
+#projetos h1 {
+    margin-left: 0.5rem;
+    font-size: 45px;
+    border-left: 10px solid rgba(255, 255, 255, 0.225);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.08);
+    padding-left: 1.5rem;
+    color: rgba(255, 255, 255, 0.848);
+}
+
+.galeria {
+    background-color: rgba(255, 255, 255, 0.017);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: inset rgba(255, 255, 255, 0.369) 0px 0px 6px 0px;
+    display: flex;
+    height: 25rem;
+    gap: 5px;
+}
+
+.galeria>div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    transition: all .9s cubic-bezier(1, 1, 1, 1.4);
+
+    box-shadow: inset rgba(255, 255, 255, 0.608) 0px 0px 5px 1px;
+    background-color: #f1f1f1;
+    filter: brightness(50%);
+}
+
+.galeria>div:hover {
+    flex: 8;
+    filter: none;
+}
+
+.maistrabalho {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #222;
+    filter: opacity(80%);
+    text-align: center;
+}
+
+.maistrabalho:active {
+    transform: scale(0.2);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1366px) {
+    .sociais {
+        position: absolute;
+        left: 54.5rem;
+        top: 30.8rem;
+        border-top: 3px solid rgba(212, 249, 242, 0.06);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        height: 160vh;
+    }
+
+    .sect-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sect-1 h1 {
+        text-align: center;
+        margin-top: 2rem;
+
+    }
+
+    .sociais {
+        position: absolute;
+        left: 13rem;
+        top: 40rem;
+    }
+
+    main img {
+        width: 70%;
+        height: 50%;
+        cursor: pointer;
+    }
+
+    main img:hover {
+        width: 65%;
+        height: 45%;
+        transition: 1s;
+        filter: brightness(80%);
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        height: 230vh;
+        padding: 0 3rem;
+    }
+
+    .sobre-1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sobre-2 {
+        width: 100%;
+    }
+
+    #projetos {
+        height: 100vh;
+        padding: 0 2rem;
+    }
+
+    .galeria {
+        height: 15rem;
+    }
+
+    .galeria>div:hover {
+        flex: 15;
+    }
+
+    .maistrabalho {
+        font-size: 30px;
+    }
+}

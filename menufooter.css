@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #16191a;   
+}
+
+.menu-hamburger {
+    display: none; /* faz o icone desaparecer. */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-sizing: border-box; /* faz a junção da altura e do padding. Caso não tivesse: iria somar o valor da altura mais a do padding. */
+    height: 9rem;
+    padding: 1rem;
+}
+
+nav img {
+    width: 12rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+figure {
+    cursor: pointer;
+}
+
+figure a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+figure a+a {
+    margin-left: 1.3rem;
+}
+
+figure i {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 25%;
+    color: #222;
+    background-color: rgb(166, 184, 160);
+}
+
+figure:hover {
+    background-color: rgba(225, 224, 224, 0.04);
+    font-size: 19px;
+    transition: 1s;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+figure a:hover {
+    color: rgb(231, 241, 225);
+    transition: 0.5s;
+    font-size: 22px;
+}
+
+/* inicio FOOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #0e0e0ef2;
+    padding: 2rem 0rem;
+    border-top: 2px solid #22222270;
+}
+
+footer p {
+    cursor: pointer;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-left: 1.5rem;
+}
+
+.footer a:hover {
+    font-size: 19px;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+/* fim FOOTER */
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+    .menu-hamburger {
+        display: block;
+        color: rgb(212, 248, 224);
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    .menu-hamburger:active {
+        transform: scale(3);
+        transition: 0.5s;
+    }
+    
+    nav img {
+        width: 10rem;      
+    }
+
+    .menu{
+        display: none;
+        justify-content: space-evenly;
+        background-color: #16191a;
+        padding: 20px 0px;
+        box-shadow: inset 0px -3px 6px 0px rgba(212, 235, 248, 0.109);
+        border-radius: 2px;
+        position: absolute;
+        top: 9rem;
+        width: 100%;
+    }
+
+    .menu.active { 
+        display: flex;  
+    }
+
+    /* Escuro/Claro */
+    .white-mode-header .menu-hamburger{
+        color: #222;
+    }
+
+    .white-mode-header .menu {
+        background-color: #0c0c0c75;
+        color: #222;
+        box-shadow: inset 0px -3px 6px 0px rgba(2, 2, 2, 0.666);
+    }
+    
+    .white-mode-header a {
+        color: black;
+    }
+}
